@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout Code') {
+    stage('TP') {
       steps {
-        git(url: 'https://github.com/ken3563/Localk/tree/dev/finalAPP', branch: 'dev')
+        git(url: 'https://github.com/ken3563/Localk/', branch: 'test_branch')
       }
     }
 

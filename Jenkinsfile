@@ -17,7 +17,7 @@ pipeline {
 
         stage('Print file') {
           steps {
-            sh '''FILE="/finalAPP/requirements.txt"
+            sh '''FILE="requirements.txt"
 echo "*** File - $FILE contents ***"
 cat $FILE'''
           }

@@ -17,7 +17,7 @@ pipeline {
 
         stage('Print file') {
           steps {
-            sh 'cd /finalAPP cat requirements.txt .'
+            sh 'cat /finalAPP/requirements.txt'
           }
         }
 

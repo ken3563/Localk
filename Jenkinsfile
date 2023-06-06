@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('List') {
-      steps {
-        sh 'ls -la'
+      parallel {
+        stage('List') {
+          steps {
+            sh 'ls -la'
+          }
+        }
+
+        stage('Print file') {
+          steps {
+            sh 'cd finalAPP cat requirements.txt .'
+          }
+        }
+
       }
     }
 
